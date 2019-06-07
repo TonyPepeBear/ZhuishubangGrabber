@@ -8,6 +8,7 @@ fun main(args: Array<String>) {
     val grabber = Grabber()
     val allMenu = grabber.getAllChapterFromMenu(number!!.toInt())
     val toFile = ArticleToFile(number)
+    println(allMenu.size)
     allMenu.forEachIndexed { index, it ->
         val article = grabber.getArticleByTitleChapter(number, it)
         println(article[TITLE])
