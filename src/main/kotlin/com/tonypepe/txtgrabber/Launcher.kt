@@ -2,7 +2,7 @@ package com.tonypepe.txtgrabber
 
 import com.tonypepe.txtgrabber.Grabber.Companion.TITLE
 
-fun main() {
+fun main(args: Array<String>) {
     println("Enter the menu number: ")
     val number = readLine()
     val grabber = Grabber()
